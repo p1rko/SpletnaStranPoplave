@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}
+Kenguruji | Home
+{% endblock %}
+
+{% block naslov %} Napovedni poplavni model {% endblock %}
+{% block content %}
+  <!-- service -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h2 class="section-title">Naš model</h2>
+          <p class="lead">Predstavljen na zemljevidu, kjer lahko izberete poljubno loakcijo, zaenkrat še bla blablalblablalblablalblalblablal</p>
+          <div class="section-border"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-image mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-image"></i>
+              </div>
+              <h4 class="mb-4">3D model</h4>
+              <p>Vizualno predstavljena količina vode</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-map-alt mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-map-alt"></i>
+              </div>
+              <h4 class="mb-4">Poplavni model</h4>
+              <p>S klikom pridete na naš poplavni model</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/p1rko/ArnesHackathonKenguruji" class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-github mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-github"></i>
+              </div>
+              <h4 class="mb-4">Odprta koda</h4>
+              <p>Koda ki pelje na GitHub</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- /service -->
+{% endblock %}

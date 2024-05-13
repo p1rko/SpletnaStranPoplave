@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head><!DOCTYPE html>
+  <html lang="zxx">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>  {% block title %} {% endblock %}</title>
+  
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+    <!-- theme meta -->
+    <meta name="theme-name" content="agen" />
+    
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/bootstrap.min.css')}}">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick/slick.css')}}">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/themify-icons/themify-icons.css')}}">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/venobox/venobox.css')}}">
+    <!-- card slider -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/card-slider/css/style.css')}}">
+  
+    <!-- Main Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico')}}" type="image/x-icon">
+  
+  </head>
+  
+  <body>
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="Egen"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/model">Poplavni model</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/vizija">Vizija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- banner -->
+  <section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+    data-background="{{ url_for('static', filename='images/banner/banner2.jpg')}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 text-white font-weight-bold font-primary">{% block naslov %} {% endblock %}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /banner -->
+ 
+  {% block content %}
+  {% endblock %}
+  <!-- footer -->
+  <footer class="bg-secondary position-relative">
+    <img src="{{ url_for('static', filename='images/backgrounds/map.png')}}" class="img-fluid overlay-image" alt="">
+    <div class="pb-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-left">
+            <p class="text-light mb-0">Copyright &copy; 2019 a theme by <a class="text-gradient-primary" href="https://themefisher.com">themefisher.com</a> | revisioned by Kenguruji
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-right text-center">
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="https://github.com/p1rko/ArnesHackathonKenguruji"><i class="ti-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/jQuery/jquery.min.js')}}"></script>
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/bootstrap/bootstrap.min.js')}}"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/slick/slick.min.js')}}"></script>
+  <!-- venobox -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/venobox/venobox.min.js')}}"></script>
+  <!-- shuffle -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/shuffle/shuffle.min.js')}}"></script>
+  <!-- apear js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/counto/apear.js')}}"></script>
+  <!-- counter -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/counto/counTo.js')}}"></script>
+  <!-- card slider -->
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/card-slider/js/card-slider-min.js')}}"></script>
+  <!-- google map -->
+  <script src="{{ url_for('static', filename='https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='plugins/google-map/gmap.js')}}"></script>
+  
+  <!-- Main Script -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js')}}"></script>
+  
+  </body>
+  </html>
+  
