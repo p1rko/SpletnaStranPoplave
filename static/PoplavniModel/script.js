@@ -45,8 +45,10 @@ async function fillRainStations () {
   }
 }
 
-await fillRiverStations()
-await fillRainStations()
+//await fillRiverStations()
+//await fillRainStations()
+
+locations.push([0,0])
 
 map.fitBounds(L.latLngBounds(locations))
 

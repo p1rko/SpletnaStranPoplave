@@ -4,6 +4,7 @@ Kenguruji | Home
 {% endblock %}
 
 {% block naslov %} Napovedni poplavni model {% endblock %}
+{% block head %} {% endblock %}
 {% block content %}
   <!-- service -->
   <section class="section">
@@ -16,20 +17,20 @@ Kenguruji | Home
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
+        <a href="{{ url_for('static', filename='images/zemljevid_qgis.png')}}" class="col-lg-4 mb-4 mb-lg-0">
           <div class="card hover-bg-secondary shadow py-4">
             <div class="card-body text-center">
               <div class="position-relative">
                 <i
-                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-image mb-5 d-inline-block text-white"></i>
-                <i class="icon-lg icon-watermark text-white ti-image"></i>
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-stats-up mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-stats-up"></i>
               </div>
-              <h4 class="mb-4">3D model</h4>
-              <p>Vizualno predstavljena količina vode</p>
+              <h4 class="mb-4">Grafi</h4>
+              <p>S klikom pridete na grafski pregled podatkov</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
+        </a>
+        <a href="/model" class="col-lg-4 mb-4 mb-lg-0">
           <div class="card hover-bg-secondary shadow py-4">
             <div class="card-body text-center">
               <div class="position-relative">
@@ -41,7 +42,7 @@ Kenguruji | Home
               <p>S klikom pridete na naš poplavni model</p>
             </div>
           </div>
-        </div>
+        </a>
         <a href="https://github.com/p1rko/ArnesHackathonKenguruji" class="col-lg-4 mb-4 mb-lg-0">
           <div class="card hover-bg-secondary shadow py-4">
             <div class="card-body text-center">
@@ -51,7 +52,7 @@ Kenguruji | Home
                 <i class="icon-lg icon-watermark text-white ti-github"></i>
               </div>
               <h4 class="mb-4">Odprta koda</h4>
-              <p>Koda ki pelje na GitHub</p>
+              <p>Kliknite za povezavo na GitHub</p>
             </div>
           </div>
         </a>
