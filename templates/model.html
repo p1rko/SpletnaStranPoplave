@@ -11,30 +11,6 @@ Kenguruji | Poplavni model
 {% block naslov %} Poplavni model {% endblock %}
 
 {% block content %}
-<h1>Data from Database</h1>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Key</th>
-            <th>Name</th>
-            <th>River</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Altitude</th>
-        </tr>
-        {% for station in data %}
-            <tr>
-                <td>{{ station.id }}</td>
-                <td>{{ station.key }}</td>
-                <td>{{ station.name }}</td>
-                <td>{{ station.river }}</td>
-                <td>{{ station.latitude }}</td>
-                <td>{{ station.longitude }}</td>
-                <td>{{ station.altitude }}</td>
-            </tr>
-        {% endfor %}
-    </table>
-
 
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>

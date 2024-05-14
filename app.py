@@ -24,6 +24,9 @@ def api():
 @app.route("/model")
 def model():
     return render_template("model.html")
+@app.route("/zemljevid")
+def zemljevid():
+    return render_template("zemljevid1.html")
 
 
 
