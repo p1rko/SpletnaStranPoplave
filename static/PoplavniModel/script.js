@@ -34,17 +34,6 @@ async function fillRiverStations () {
   }
 }
 
-async function fillRainStations () {
-  const response = await fetch('/stations-rain.json')
-  const stations = await response.json()
-
-  for (const [id, station] of Object.entries(stations)) {
-    const location = [station.lat, station.lon]
-    L.marker(location, { title: `Rain: ${station.name} (${id})`, icon: markerIcon('#0d98ba') }).addTo(map)
-    locations.push(location)
-  }
-}
-
 //await fillRiverStations()
 //await fillRainStations()
 

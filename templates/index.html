@@ -17,16 +17,29 @@ Kenguruji | Home
         </div>
       </div>
       <div class="row">
-        <a href="{{ url_for('static', filename='images/zemljevid_qgis.png')}}" class="col-lg-4 mb-4 mb-lg-0">
+        <a href="#" class="col-lg-4 mb-4 mb-lg-0">
           <div class="card hover-bg-secondary shadow py-4">
             <div class="card-body text-center">
               <div class="position-relative">
                 <i
-                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-stats-up mb-5 d-inline-block text-white"></i>
-                <i class="icon-lg icon-watermark text-white ti-stats-up"></i>
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-bar-chart mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-bar-chart"></i>
               </div>
               <h4 class="mb-4">Grafi</h4>
               <p>S klikom pridete na grafski pregled podatkov</p>
+            </div>
+          </div>
+        </a>
+        <a href="{{ url_for('static', filename='images/ogrozena_obmocja.png')}}" class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-map-alt mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-map-alt"></i>
+              </div>
+              <h4 class="mb-4">Zemljevid</h4>
+              <p>Kliknite, da vam odpre zemljevid</p>
             </div>
           </div>
         </a>
@@ -35,11 +48,24 @@ Kenguruji | Home
             <div class="card-body text-center">
               <div class="position-relative">
                 <i
-                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-map-alt mb-5 d-inline-block text-white"></i>
-                <i class="icon-lg icon-watermark text-white ti-map-alt"></i>
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-settings mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-settings"></i>
               </div>
               <h4 class="mb-4">Poplavni model</h4>
-              <p>S klikom pridete na naš poplavni model</p>
+              <p>Kliknite da vam odpre poplavni model</p>
+            </div>
+          </div>
+        </a>
+        <a href="/api" class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-server mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-server"></i>
+              </div>
+              <h4 class="mb-4">API</h4>
+              <p>Kliknite za povezavo do podatkov</p>
             </div>
           </div>
         </a>
@@ -51,8 +77,21 @@ Kenguruji | Home
                   class="icon-lg icon-box bg-gradient-primary rounded-circle ti-github mb-5 d-inline-block text-white"></i>
                 <i class="icon-lg icon-watermark text-white ti-github"></i>
               </div>
-              <h4 class="mb-4">Odprta koda</h4>
+              <h4 class="mb-4">GitHub</h4>
               <p>Kliknite za povezavo na GitHub</p>
+            </div>
+          </div>
+        </a>
+        <a href="/model" class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card hover-bg-secondary shadow py-4">
+            <div class="card-body text-center">
+              <div class="position-relative">
+                <i
+                  class="icon-lg icon-box bg-gradient-primary rounded-circle ti-new-window mb-5 d-inline-block text-white"></i>
+                <i class="icon-lg icon-watermark text-white ti-new-window"></i>
+              </div>
+              <h4 class="mb-4">Zenodo</h4>
+              <p>Kliknite za povezavo na Zenodo</p>
             </div>
           </div>
         </a>
